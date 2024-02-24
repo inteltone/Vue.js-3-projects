@@ -1,0 +1,105 @@
+html,body{
+	block-size: 100%;
+}
+body{	
+	color: var(--clr-text);
+	background-color: var(--clr-gray-900);
+	font-family: var(--ff-prim);
+	font-size: var(--fz-0);
+	font-weight: var(--fw-n);
+	line-height: var(--lh-n);	
+}
+#app{
+	overflow: hidden;
+}
+
+.page{
+	display: grid;
+	grid-template-columns: [full-start] 1fr var(--pad) [content-start] minmax(var(--min-content), var(--max-content)) [content-end] var(--pad) 1fr [full-end];
+	padding-block-end: 100px;
+	background-color: var(--clr-gray-100);
+	transform-origin: left top;
+	transition: transform var(--tr);
+	&__title{
+		padding-block-start: 100px;
+		font-size: var(--fz-l);
+		line-height: 1.1;
+	}
+	&__author{		
+		font-size: var(--fz-xs);
+		font-style: italic;
+		margin-block-end: 30px;
+	}
+	&__content > * + * {
+		margin-block-start: 20px;
+	}
+	&__content-heading{
+		font-size: var(--fz-m);
+	}
+}
+
+.page > * {
+	grid-column: content;
+}
+
+.page--rotated{
+	transform: rotate(-20deg);
+}
+
+.burger{
+	--size: 200px;
+	position: absolute;
+	inset-inline-start: calc(-1 * var(--size) / 2);
+	inset-block-start: calc(-1 * var(--size) / 2);
+	inline-size: var(--size);
+	block-size: var(--size);
+	color: var(--clr-white);
+	background-color: var(--clr-red);
+	font-size: var(--fz-l);
+	border-radius: 100vw;
+	transform-origin: center;
+	transition: transform var(--tr);
+}
+.burger--rotated{
+	transform: rotate(-90deg);
+}
+[data-burger]{
+	position: absolute;
+	inset-inline-end: 20%;
+	inset-block-end: 20%;
+}
+[data-close]{
+	position: absolute;
+	inset-inline-end: 65%;
+	inset-block-end: 20%;
+}
+.menu{
+	position: absolute;
+	inset-inline-start: 40px;
+	inset-block-end: 10vh;
+	display: flex;
+	flex-direction: column;
+	gap: 30px 0;
+	&__item{
+		display: flex;
+		align-items: center;
+		gap: 0 10px;
+		text-decoration: none;
+		transform: translateX(-200px);
+		transition: transform var(--tr) 0s;
+		&.move{
+			transform: translateX(0px);
+			transition: transform var(--tr) .25s;
+		}
+	}
+	span{
+		color: var(--clr-white);
+		font-size: var(--fz-m);
+	}	
+	&__text{		
+		font-family: var(--ff-prim);
+		font-size: var(--fz-xs) !important;
+		font-weight: var(--fw-m);
+		text-transform: uppercase;		
+	}
+}

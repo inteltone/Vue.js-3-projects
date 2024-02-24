@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "icomoon";
+  src: url("./fonts/icomoon.woff?ieygil") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\e900";
+}
+
+.icon-mail:before {
+  content: "\e945";
+}
+
+.icon-user:before {
+  content: "\e976";
+}
+
+.icon-burger:before {
+  content: "\e9bd";
+}
+
+.icon-close:before {
+  content: "\ea0f";
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  --min-content: 320px;
+  --max-content: 1000px;
+  --pad: 30px;
+  --ff-prim: Montserrat, sans-serif;
+  --fz-xs: 16px;
+  --fz-s: 18px;
+  --fz-m: 24px;
+  --fz-l: 32px;
+  --fz-xl: 48px;
+  --fz-xxl: 64px;
+  --fw-n: 400;
+  --fw-m: 500;
+  --fw-sb: 600;
+  --fw-b: 700;
+  --lh-n: 1.5;
+  --clr-text: #333;
+  --clr-blue: #3498DB;
+  --clr-red: #E74C3C;
+  --clr-white: #fff;
+  --clr-gray-100: #F2F3F4;
+  --clr-gray-300: #D7DBDD;
+  --clr-gray-900: #1B2631;
+  --clr-gray: #D7DBDD;
+  --tr: .5s ease-in-out;
+}
+
+html, body {
+  block-size: 100%;
+}
+
+body {
+  color: var(--clr-text);
+  background-color: var(--clr-gray-900);
+  font-family: var(--ff-prim);
+  font-size: var(--fz-0);
+  font-weight: var(--fw-n);
+  line-height: var(--lh-n);
+}
+
+#app {
+  overflow: hidden;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: [full-start] 1fr var(--pad) [content-start] minmax(var(--min-content), var(--max-content)) [content-end] var(--pad) 1fr [full-end];
+  -webkit-padding-after: 100px;
+          padding-block-end: 100px;
+  background-color: var(--clr-gray-100);
+  transform-origin: left top;
+  transition: transform var(--tr);
+}
+.page__title {
+  -webkit-padding-before: 100px;
+          padding-block-start: 100px;
+  font-size: var(--fz-l);
+  line-height: 1.1;
+}
+.page__author {
+  font-size: var(--fz-xs);
+  font-style: italic;
+  -webkit-margin-after: 30px;
+          margin-block-end: 30px;
+}
+.page__content > * + * {
+  -webkit-margin-before: 20px;
+          margin-block-start: 20px;
+}
+.page__content-heading {
+  font-size: var(--fz-m);
+}
+
+.page > * {
+  grid-column: content;
+}
+
+.page--rotated {
+  transform: rotate(-20deg);
+}
+
+.burger {
+  --size: 200px;
+  position: absolute;
+  inset-inline-start: calc(-1 * var(--size) / 2);
+  inset-block-start: calc(-1 * var(--size) / 2);
+  inline-size: var(--size);
+  block-size: var(--size);
+  color: var(--clr-white);
+  background-color: var(--clr-red);
+  font-size: var(--fz-l);
+  border-radius: 100vw;
+  transform-origin: center;
+  transition: transform var(--tr);
+}
+
+.burger--rotated {
+  transform: rotate(-90deg);
+}
+
+[data-burger] {
+  position: absolute;
+  inset-inline-end: 20%;
+  inset-block-end: 20%;
+}
+
+[data-close] {
+  position: absolute;
+  inset-inline-end: 65%;
+  inset-block-end: 20%;
+}
+
+.menu {
+  position: absolute;
+  inset-inline-start: 40px;
+  inset-block-end: 10vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px 0;
+}
+.menu__item {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  text-decoration: none;
+  transform: translateX(-200px);
+  transition: transform var(--tr) 0s;
+}
+.menu__item.move {
+  transform: translateX(0px);
+  transition: transform var(--tr) 0.25s;
+}
+.menu span {
+  color: var(--clr-white);
+  font-size: var(--fz-m);
+}
+.menu__text {
+  font-family: var(--ff-prim);
+  font-size: var(--fz-xs) !important;
+  font-weight: var(--fw-m);
+  text-transform: uppercase;
+}/*# sourceMappingURL=main.css.map */
