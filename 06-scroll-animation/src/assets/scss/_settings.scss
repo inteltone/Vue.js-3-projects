@@ -1,0 +1,38 @@
+html,body{
+	overflow-x: hidden;
+	block-size: 100%;
+}
+body{		
+	padding-inline: 15px;	
+	color: var(--clr-text);
+	background-color: var(--clr-gray-100);
+	font-family: var(--ff-prim);
+	font-size: var(--fz-0);
+	font-weight: var(--fw-n);
+	line-height: var(--lh-n);	
+}
+h1{
+	font-size: clamp(1.5rem, 1.3261rem + 0.8696vi, 2rem);
+	line-height: 1.1;
+	text-align: center;
+}
+#app{
+	display: grid;
+	justify-content: center;
+	justify-items: center;
+	gap: 20px;
+	padding-block: 10px 50px;
+}
+.box{
+	display: grid;
+	place-items: center;	
+	max-inline-size: 500px;
+	inline-size: 100%;
+	block-size: 200px;
+	color: var(--clr-white);
+	background-color: var(--clr-blue);
+	font-size: var(--fz-l);
+	font-weight: var(--fw-b);
+	text-transform: uppercase;
+	border-radius: 40px;
+}
