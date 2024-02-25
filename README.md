@@ -7,3 +7,5 @@
 | 03 | [Вращающаяся навигация](https://github.com/inteltone/Vue.js-3-projects/tree/master/03-rotating-navigation) | [Демо](https://inteltone.ru/vue/rotating-navigation/) |
 | 04 | [Скрываемый поиск](https://github.com/inteltone/Vue.js-3-projects/tree/master/04-hidden-search-widget)     | [Демо](https://inteltone.ru/vue/hidden-search/)       |
 | 05 | [Загрузка с размытием](https://github.com/inteltone/Vue.js-3-projects/tree/master/05-blurry-loading)       | [Демо](https://inteltone.ru/vue/blurry-loading/)      |
+| 06 | [Анимация по скроллу](https://github.com/inteltone/Vue.js-3-projects/tree/master/06-scroll-animation)      | [Демо](https://inteltone.ru/vue/scroll-animation/)    |
+
