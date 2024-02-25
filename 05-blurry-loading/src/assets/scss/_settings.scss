@@ -1,0 +1,33 @@
+html,body{
+	block-size: 100%;
+}
+body{		
+	color: var(--clr-white);
+	background-color: var(--clr-gray-900);
+	font-family: var(--ff-prim);
+	font-size: var(--fz-0);
+	font-weight: var(--fw-n);
+	line-height: var(--lh-n);	
+}
+#app{
+	block-size: 100%;	
+}
+.counter-container{
+	display: grid;
+	place-items: center;
+	block-size: 100%;	
+}
+.counter-img{
+	position: absolute;
+	z-index: -1;
+	inset: 0;
+	background-image: url(../img/photo.avif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.counter{
+	font-size: var(--fz-xl);
+	font-weight: var(--fw-m);
+}
+
