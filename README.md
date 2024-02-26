@@ -9,5 +9,6 @@
 | 05 | [Загрузка с размытием](https://github.com/inteltone/Vue.js-3-projects/tree/master/05-blurry-loading)       | [Демо](https://inteltone.ru/vue/blurry-loading/)      |
 | 06 | [Анимация по скроллу](https://github.com/inteltone/Vue.js-3-projects/tree/master/06-scroll-animation)      | [Демо](https://inteltone.ru/vue/scroll-animation/)    |
 | 07 | [Разделенная страница](https://github.com/inteltone/Vue.js-3-projects/tree/master/07-split-landing-page)   | [Демо](https://inteltone.ru/vue/split-page/)          |
+| 08 | [Волна для формыц](https://github.com/inteltone/Vue.js-3-projects/tree/master/08-form-wave)                | [Демо](https://inteltone.ru/vue/form-wave/)           |
 
 
