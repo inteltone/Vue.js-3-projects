@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Список задач | Vue.js 3</title>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<div id="app" v-cloak>
+		<h1 v-if="tasks.length === 0" class="app-title">Список задач</h1>
+		<div v-else class="info">
+			<div class="info__current">В работе<span class="num">{{ calcCurrent }}</span></div>
+			<div class="info__done">Выполнено<span class="num">{{ calcDone }}</span></div>
+		</div>
+		<div class="form">
+			<button class="form__btn delete" @click.prevent="clearInput">X</button>
+			<input 
+				class="form__input" 
+				type="text" 
+				placeholder="Введите задачу..."
+				v-model="task"
+				@keyup.enter="addItem"
+			>
+			<button class="form__btn add" @click="addItem">&#8594;</button>			
+		</div>
+		<div class="tasks">
+			<div class="tasks__block">
+				<p v-if="tasks.length === 0" class="tasks__title">Пока задач нет</p>
+			</div>
+			<div class="tasks__block">
+				<p v-if="calcCurrent > 0" class="tasks__title">В работе</p>
+				<div class="tasks__list">
+					<template v-for="task in tasks" :key="task.text">
+						<div v-if="!task.isActive" class="tasks__item">
+							<input
+								type="checkbox"
+								class="tasks__checkbox"
+								v-model="task.isActive"								
+							>
+							<span>{{ task.text }}</span>
+							<button class="tasks__btn delete" @click.prevent="deleteItem(task.text)">X</button>
+						</div>
+					</template>
+				</div>
+			</div>	
+			<div class="tasks__block">
+				<p v-if="calcDone > 0" class="tasks__title">Выполнено</p>
+				<div class="tasks__list">
+					<template v-for="task in tasks" :key="task.text">
+						<div v-if="task.isActive" class="tasks__item">
+							<input
+								type="checkbox"
+								class="tasks__checkbox"
+								v-model="task.isActive"
+							>
+							<span class="tasks__item-done">{{ task.text }}</span>
+							<button class="tasks__btn delete" @click.prevent="deleteItem(task.text)">X</button>
+						</div>
+					</template>
+				</div>
+			</div>					
+		</div>
+		<button v-if="tasks.length > 0" class="btn-delete-all" @click="deleteAll">Удалить все</button>
+	</div>
+	<!-- <script src="https://unpkg.com/vue@3"></script> -->
+	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+	<script src="./main.js"></script>
+</body>
+</html>
