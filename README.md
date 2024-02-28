@@ -10,5 +10,6 @@
 | 06 | [Анимация по скроллу](https://github.com/inteltone/Vue.js-3-projects/tree/master/06-scroll-animation)      | [Демо](https://inteltone.ru/vue/scroll-animation/)    |
 | 07 | [Разделенная страница](https://github.com/inteltone/Vue.js-3-projects/tree/master/07-split-landing-page)   | [Демо](https://inteltone.ru/vue/split-page/)          |
 | 08 | [Волна для формы](https://github.com/inteltone/Vue.js-3-projects/tree/master/08-form-wave)                 | [Демо](https://inteltone.ru/vue/form-wave/)           |
+| 09 | [Список дел](https://github.com/inteltone/Vue.js-3-projects/tree/master/09-todo-list)                      | [Демо](https://inteltone.ru/vue/todo-list/)           |
 
 
