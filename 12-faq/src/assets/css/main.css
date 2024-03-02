@@ -1,38 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
-@font-face {
-  font-family: "icomoon";
-  src: url("./icomoon.woff?y3uhq") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-[class^=icon-], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-bubble:before {
-  content: "\e96e";
-}
-
-.icon-close:before {
-  content: "\ea0f";
-}
-
-.icon-down:before {
-  content: "\ea43";
-}
-
 /* Box sizing rules */
 *,
 *::before,
@@ -178,7 +145,7 @@ body {
   place-items: center;
   padding: 30px 15px;
   color: var(--clr-text);
-  background-color: var(--clr-gray-100);
+  background-color: var(--clr-blue-500);
   font-family: var(--ff-prim);
   font-size: var(--fz-0);
   font-weight: var(--fw-n);
@@ -186,98 +153,54 @@ body {
 }
 
 #app {
-  display: grid;
-  place-items: center;
-  gap: 20px;
-  max-inline-size: 600px;
-  inline-size: 100%;
+  inline-size: min(600px, 100%);
 }
 
 .title {
-  font-size: var(--fz-l);
-  font-weight: var(--fw-m);
-}
-
-.item {
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  gap: 20px;
-  inline-size: 100%;
-  padding: 30px 30px;
-  border: 1px solid var(--clr-gray-500);
-  border-radius: 10px;
-  transition: background-color var(--tr);
-}
-.item.expanded {
-  background-color: var(--clr-white);
-}
-.item.expanded::before {
-  content: "\e96e";
-  position: absolute;
-  inset-inline-start: 10px;
-  inset-block-start: 40px;
-  color: var(--clr-green-500);
-  font-family: "icomoon" !important;
-  font-size: 100px;
-  line-height: 1;
-  opacity: 0.15;
-}
-.item.expanded::after {
-  content: "\e96e";
-  position: absolute;
-  inset-inline-start: -20px;
-  inset-block-start: 2px;
-  transform: scale(-1, 1);
-  color: var(--clr-blue-500);
-  font-family: "icomoon" !important;
-  font-size: 100px;
-  line-height: 1;
-  opacity: 0.15;
-}
-
-.item__qa {
-  flex-grow: 1;
-}
-
-.item__q {
-  color: var(--clr-gray-900);
-  font-size: 21px;
-  font-weight: var(--fw-b);
-  line-height: 1.2;
-}
-
-.item__a {
-  -webkit-padding-before: 20px;
-          padding-block-start: 20px;
-}
-
-.item__btns {
-  position: relative;
-  min-inline-size: 24px;
-  block-size: 24px;
-}
-
-.item__btn {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
+  -webkit-margin-after: 10px;
+          margin-block-end: 10px;
   color: var(--clr-white);
+  font-size: var(--fz-n);
+  text-align: center;
 }
-.item__btn span {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  font-family: "icomoon";
-  font-size: 10px;
+.title h1 {
+  font-size: var(--fz-l);
 }
-.item__btn .icon-down {
+
+.textarea {
+  inline-size: 100%;
+  min-block-size: 150px;
+  -webkit-margin-after: 10px;
+          margin-block-end: 10px;
+  padding: 10px;
+}
+.textarea::-moz-placeholder {
   color: var(--clr-gray-500);
-  font-size: 23px;
 }
-.item__btn .icon-close {
-  background-color: var(--clr-gray-500);
+.textarea:-ms-input-placeholder {
+  color: var(--clr-gray-500);
+}
+.textarea::placeholder {
+  color: var(--clr-gray-500);
+}
+
+.choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.choices__item {
+  padding: 5px 15px;
+  color: var(--clr-white);
+  background-color: var(--clr-red-500);
+  font-weight: var(--fw-m);
+  border: 2px solid var(--clr-blue-500);
   border-radius: 100vw;
+}
+.choices__item.picked {
+  background-color: var(--clr-green-500);
+  border: 2px solid var(--clr-white);
+}
+.choices__item.hidden {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

@@ -1,39 +1,66 @@
 <template>
-	<app-title>Часто задаваемые вопросы</app-title>
-	<app-item :class="{expanded: item.isExpanded}" v-for="(item,index) in qa" :key="index">
-		<template v-slot:qa>
-			<app-para class="item__q">{{ item.question }}</app-para>
-			<app-para v-show="item.isExpanded" class="item__a">{{ item.answer }}</app-para>
-		</template>
-		<template v-slot:btns>
-			<app-button v-if="!item.isExpanded" @click="item.isExpanded = true">
-				<app-button-icon class="icon-down"></app-button-icon>
-			</app-button>
-			<app-button v-else @click="item.isExpanded = false">
-				<app-button-icon class="icon-close"></app-button-icon>
-			</app-button>
-		</template>
-	</app-item>		
+	<div class="title">
+		<h1>Случайный выбор</h1>
+		<p>Вводите варианты, разделяя их запятой (',').</p>
+		<p>Закончив, нажмите Enter.</p>
+	</div>
+	<textarea class="textarea" placeholder="Вводите здесь..." v-model="text"></textarea>
+	<p class="choices">				
+		<template v-for="(item,index) in splitChoices" :key="index">
+			<span v-if="item !== ''" class="choices__item">{{ item }}</span>
+		</template>		
+	</p>
+	<p v-if="text.length === 0" class="choices">				
+		<template v-for="(item,index) in arr" :key="index">
+			<span class="choices__item" :class="{picked: index === picked}">{{ item }}</span>
+		</template>		
+	</p>
 </template>
 
 <script>
-import AppTitle from './components/AppTitle.vue'
-import AppItem from './components/AppItem.vue'
-import AppButton from './components/AppButton.vue'
-import AppButtonIcon from './components/AppButtonIcon.vue'
-import AppPara from './components/AppPara.vue'
-import {qa} from './assets/data.js'
-
+import { useEventListener } from '@vueuse/core'
 export default {
-	components: {
-		AppTitle, AppItem, AppButton, AppButtonIcon, AppPara,
-	},
+	name: 'App',
 	data() {
 		return {
-			qa,
+			arr: [],
+			text: '',
+			picked: undefined,
+		}
+	},
+	computed: {
+		splitChoices() {
+			let temp = this.text.split(',')
+			temp = temp.map(el => el.trim())
+			return temp
 		}
 	},	
+	methods: {
+		selectRandomItem(arr) {
+			this.picked = Math.floor(Math.random() * arr.length)
+		},
+	},
+	mounted() {
+		useEventListener(document, 'keydown', (e) => {
+			if (e.key === 'Enter') {
+				this.arr = this.text.split(',')
+				this.arr = this.arr.map(el => el.trim())
+				this.arr = this.arr.filter(el => el !== '')
+				setTimeout(() => {
+					this.text = ''					
+				}, 0)
+				let intId = setInterval(() => {					
+					this.selectRandomItem(this.arr)
+				}, 100)
+				setTimeout(() => {
+					clearInterval(intId)
+				},3000)
+			}
+		})
+	}
 }
 </script>
+
+
 
 
