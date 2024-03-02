@@ -12,5 +12,6 @@
 | 08 | [Волна для формы](https://github.com/inteltone/Vue.js-3-projects/tree/master/08-form-wave)                 | [Демо](https://inteltone.ru/vue/form-wave/)           |
 | 09 | [Список дел](https://github.com/inteltone/Vue.js-3-projects/tree/master/09-todo-list)                      | [Демо](https://inteltone.ru/vue/todo-list/)           |
 | 10 | [Случайная цитата](https://github.com/inteltone/Vue.js-3-projects/tree/master/10-quotes)                   | [Демо](https://inteltone.ru/vue/quotes/)              |
+| 11 | [Код клавиш](https://github.com/inteltone/Vue.js-3-projects/tree/master/11-event-keycodes)                 | [Демо](https://inteltone.ru/vue/event-keycodes/)      |
 
 
