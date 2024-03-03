@@ -16,5 +16,6 @@
 | 12 | [FAQ](https://github.com/inteltone/Vue.js-3-projects/tree/master/12-faq)                                   | [Демо](https://inteltone.ru/vue/faq/)                 |
 | 13 | [Случайный выбор](https://github.com/inteltone/Vue.js-3-projects/tree/master/13-random-choice-picker)      | [Демо](https://inteltone.ru/vue/random-choice-picker/)|
 | 14 | [Анимированное меню](https://github.com/inteltone/Vue.js-3-projects/tree/master/14-animated-navigation)    | [Демо](https://inteltone.ru/vue/animated-navigation/) |
+| 15 | [Социальные счетчики](https://github.com/inteltone/Vue.js-3-projects/tree/master/15-counters)              | [Демо](https://inteltone.ru/vue/counters/)            |
 
 
