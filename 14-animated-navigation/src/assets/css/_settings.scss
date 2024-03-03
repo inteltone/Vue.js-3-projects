@@ -1,0 +1,128 @@
+html,body{
+	overflow-x: hidden;
+	block-size: 100%;
+}
+body{		
+	position: relative;
+	// padding: 30px 15px;	
+	color: var(--clr-text);
+	font-family: var(--ff-prim); 
+	font-size: var(--fz-0);
+	font-weight: var(--fw-n);
+	line-height: var(--lh-n);	
+}
+a{
+	text-decoration: none;
+}
+#app{
+	position: absolute;
+	inset: 0;
+}
+.top{
+	position: absolute;
+	z-index: -1;
+	inset: 0 0 50% 0;
+	background-color: var(--clr-blue-100);
+}
+.bottom{
+	position: absolute;
+	z-index: -1;
+	inset: 50% 0 0 0;
+	background-color: var(--clr-blue-500);
+}
+.nav{
+	--tr: .6s ease-in-out;
+	position: absolute;
+	inset-inline-start: 50%;
+	inset-block-start: 50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	inline-size: max-content;
+	padding: 20px;
+	background-color: var(--clr-white);
+	border-radius: 4px;
+	box-shadow: 0 2px 6px hsl(var(--clr-shadow) / .25);
+	transition: gap var(--tr);
+	&.shrinked{
+		gap: 0;
+	}
+}
+.menu{	
+	display: grid;
+	grid-template-columns: 0fr;
+	transition: grid-template-columns var(--tr);
+	&.expanded{
+		grid-template-columns: 1fr;
+	}
+	&__content{
+		overflow: hidden;
+		display: flex;
+		gap: 0 20px;
+	}
+	&__item{
+		flex: 0 0;
+		inline-size: max-content;
+		transition: opacity var(--tr);
+		&.hide{
+			opacity: 0;
+		}
+	}
+}
+.burger{
+	position: relative;
+	min-inline-size: 30px;
+	block-size: 30px;
+	// border: 1px solid;
+	cursor: pointer;
+	&__line{
+		position: absolute;
+		inset-inline-start: 0;
+		inset-block-start: 50%;
+		inline-size: 100%;
+		block-size: 2px;
+		background-color: var(--clr-blue-500);
+	}
+	&__line.up{
+		transform: translate(0,0) rotate(45deg);
+		transition: transform var(--tr);
+		&.rotate{
+			transform: translate(0,-5px) rotate(540deg);
+		}
+	}
+	&__line.down{
+		transform: translate(0,0) rotate(-45deg);
+		transition: transform var(--tr);
+		&.rotate{
+			transform: translate(0,5px) rotate(-540deg);
+		}
+	}
+}
+@media (max-width: 429px) {
+	.nav{
+		flex-direction: column;
+	}
+	.menu{
+		grid-template-rows: 0fr;
+		transition: grid-template-rows var(--tr);
+		&.expanded{
+			grid-template-rows: 1fr;
+		}
+		&__content{
+			overflow: hidden;
+			flex-direction: column;
+			gap: 20px 0;
+		}
+		&__item{
+			flex: 0 0;
+			align-self: center;
+			inline-size: max-content;
+			
+			transition: opacity var(--tr);
+			&.hide{
+				opacity: 0;
+			}
+		}
+	}
+}
