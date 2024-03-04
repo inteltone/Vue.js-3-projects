@@ -1,0 +1,118 @@
+html,body{
+	overflow-x: hidden;
+	block-size: 100%;
+}
+body{		
+	color: var(--clr-white);
+	background-color: var(--clr-blue-500);
+	font-family: var(--ff-prim); 
+	font-size: var(--fz-0);
+	font-weight: var(--fw-n);
+	line-height: var(--lh-n);	
+}
+#app{
+	
+}
+header{
+	display: flex;
+	justify-content: end;
+	padding: 10px 20px;
+	background-color: var(--clr-blue-900);
+}
+.search{
+	padding: 10px 20px;
+	color: var(--clr-white);
+	background-color: var(--clr-blue-700);
+	border: none;
+	border-radius: 100vw;
+}
+.search::placeholder{
+	color: var(--clr-blue-200);
+}
+.search:focus-visible {
+	outline: none;
+}
+#main{
+	padding: 30px;
+}
+.movie{
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--clr-blue-900);
+	border-radius: 10px;
+}
+.movie-info{
+	flex-grow: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0 20px;
+	padding: 10px 20px;
+	h3{
+		line-height: 1.25;
+	}
+	span{
+		padding: 5px 10px;
+		background-color: var(--clr-blue-500);
+		font-weight: var(--fw-b);
+		border-radius: 3px;
+	}
+	span.green{
+		color: var(--clr-green-500);
+	}
+	span.red{
+		color: var(--clr-red-500);
+	}
+	span.blue{
+		color: var(--clr-blue-500);
+	}
+}
+.overview{	
+	position: absolute;
+	inset-inline-start: 0;
+	inset-block-end: 0;
+	transform: translateY(101%);
+	max-block-size: 75%;
+	padding: 15px;
+	color: var(--clr-blue-900);
+	background-color: var(--clr-white);
+	overflow-y: auto;
+	transition: transform var(--tr);
+	h3{
+		margin-block-end: 8px;
+	}
+}
+.overview {
+	overflow-y: scroll;
+ }
+ .overview::-webkit-scrollbar {
+	width: 6px;
+ }
+ .overview::-webkit-scrollbar-track {
+	background-color: var(--clr-gray-100);
+	border-radius: 100vw;
+ }
+ .overview::-webkit-scrollbar-thumb {
+	background-color: var(--clr-blue-700);
+	border-radius: 100vw;
+ }
+
+.movie:hover .overview{
+	transform: translateY(0);
+}
+.auto-grid {
+	--min-w: 250px;
+	--max-w: 1fr;
+	--c-g: 30px;
+	--r-g: 30px;
+	display: -ms-grid;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(var(--min-w), 100%), var(--max-w)));
+	-webkit-column-gap: var(--c-g);
+	-moz-column-gap: var(--c-g);
+	column-gap: var(--c-g);
+	row-gap: var(--r-g);
+ }
+ 
