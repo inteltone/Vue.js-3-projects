@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<div id="app" class="app">
+		<h1 class="app__title">CSS-свойство <span class="orange">transform</span></h1>
+		<div class="app__settings">
+			<div class="app__settings-sliders">
+				<div class="app__settings-slider">
+					<label>perspective: {{perspective}}px;</label>
+					<input type="range" min="0" max="999" v-model="perspective">
+				</div>
+				<div class="app__settings-slider">
+					<label>transform: rotateX({{x}}deg)</label>
+					<input type="range" min="-180" max="180" v-model="x">
+				</div>
+				<div class="app__settings-slider">
+					<label>transform: rotateY({{y}}deg)</label>
+					<input type="range" min="-180" max="180" v-model="y">
+				</div>
+				<div class="app__settings-slider">
+					<label>transform: rotateZ({{z}}deg)</label>
+					<input type="range" min="-180" max="180" v-model="z">
+				</div>
+			</div>
+			<div class="app__settings-btns">
+				<button class="reset" @click.prevent="reset">Сброс</button>
+				<button class="copy" @click.prevent="copy()">Скопировать</button>
+			</div>
+		</div>
+		<div class="app__output">
+			<div class="app__box" :style="updateBoxStyle"></div>
+		</div>
+	</div>
+	<footer class="footer">
+		<p>Сделано на <a href="https://vuejs.org/" target="_blank">Vue.js 3</a></p>
+	</footer>
+	<script src="https:/unpkg.com/vue@3"></script>
+	<script src="./js/app.js"></script>
+</body>
+</html>
