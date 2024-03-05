@@ -21,5 +21,7 @@
 | 17 | [Поиск фильмов](https://github.com/inteltone/Vue.js-3-projects/tree/master/17-movie-app)                   | [Демо](https://inteltone.ru/vue/movie-app/)           |
 | 18 | [Трансформация](https://github.com/inteltone/Vue.js-3-projects/tree/master/18-perspective-playground)      | [Демо](https://inteltone.ru/vue/transform/)           |
 | 19 | [Слайдер фона](https://github.com/inteltone/Vue.js-3-projects/tree/master/19-background-slider)            | [Демо](https://inteltone.ru/vue/background-slider/)   |
+| 20 | [Часы](https://github.com/inteltone/Vue.js-3-projects/tree/master/20-theme-clock)                          | [Демо](https://inteltone.ru/vue/theme-clock/)         |
+
 
 
