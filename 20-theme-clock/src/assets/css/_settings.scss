@@ -1,0 +1,121 @@
+html,body{
+	overflow-x: hidden;
+	block-size: 100%;
+}
+body{		
+	position: relative;	
+	color: var(--clr-text);
+	background-color: var(--clr-white);
+	font-family: var(--ff-prim); 
+	font-size: var(--fz-0);
+	font-weight: var(--fw-n);
+	line-height: var(--lh-n);	
+}
+#app{
+	position: absolute;
+	inset: 0;	
+}
+.clock{
+	position: absolute;
+	inset: 0;
+	display: grid;
+	place-items: center;
+	align-content: center;
+	transition: background-color var(--tr);
+	&__btn{
+		padding: 6px 12px;
+		margin-block-end: 100px;
+		color: var(--clr-text);
+		background-color: var(--clr-white);
+		font-size: var(--fz-l);
+		border-radius: 6px;
+		transition: background-color var(--tr), color var(--tr);
+		&:focus-visible{
+			outline: none;
+		}
+	}
+	&__face{
+		position: relative;
+		inline-size: 150px;
+		block-size: 150px;
+		margin-block-end: 50px;
+		&>*{
+			position: absolute;
+		}
+		.line{			
+			inset-inline-start: 50%;
+			inset-block-start: 50%;	
+			inline-size: 60%;
+			block-size: 0px;
+			background-color: var(--clr-white);
+			transform-origin: left center;
+			transition: background-color var(--tr);
+		}
+		.line::before{
+			content: '';
+			position: absolute;
+			inset-inline-end: 0;
+			inset-block-start: 50%;
+			transform: translateY(-50%);
+			inline-size: 4px;
+			block-size: 4px;
+			background-color: inherit;
+			border-radius: 100vw;
+		}
+		.hour-hand{
+			--w: 4px;
+			inline-size: 40%;
+			block-size: var(--w);
+			inset-inline-start: 50%;
+			inset-block-start: 50%;
+			transform-origin: left center;			
+			background-color: var(--clr-white);
+			transition: transform var(--tr), background-color var(--tr);
+		}
+		.minute-hand{
+			--w: 2px;			
+			block-size: var(--w);
+			inset-inline-start: 50%;
+			inset-block-start: 50%;
+			transform-origin: left center;
+			inline-size: 50%;
+			background-color: var(--clr-white);
+			transition: transform var(--tr), background-color var(--tr);
+		}
+		.second-hand{
+			--w: 2px;
+			inline-size: 50%;
+			block-size: var(--w);
+			inset-inline-start: 50%;
+			inset-block-start: 50%;
+			transform-origin: left center;
+			background-color: var(--clr-red-500);
+			transition: transform var(--tr);
+		}
+		.center{
+			--w: 10px;
+			aspect-ratio: 1 / 1;
+			inline-size: var(--w);
+			block-size: auto;
+			inset-inline-start: 50%;
+			inset-block-start: 50%;
+			transform: translate(-50%,-50%);			
+			background-color: var(--clr-white);
+			border: 2px solid var(--clr-red-500);
+			border-radius: 100vw;
+			transition: background-color var(--tr);
+		}
+	}
+	&__time{
+		font-size: var(--fz-xxl);
+		transition: color var(--tr);
+	}
+	&__text{
+		font-size: var(--fz-l);
+		transition: color var(--tr);
+	}
+}
+.dark{
+	color: var(--clr-white) !important;
+	background-color: var(--clr-text) !important;
+}
