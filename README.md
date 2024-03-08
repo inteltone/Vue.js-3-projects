@@ -22,6 +22,7 @@
 | 18 | [Трансформация](https://github.com/inteltone/Vue.js-3-projects/tree/master/18-perspective-playground)      | [Демо](https://inteltone.ru/vue/transform/)           |
 | 19 | [Слайдер фона](https://github.com/inteltone/Vue.js-3-projects/tree/master/19-background-slider)            | [Демо](https://inteltone.ru/vue/background-slider/)   |
 | 20 | [Часы](https://github.com/inteltone/Vue.js-3-projects/tree/master/20-theme-clock)                          | [Демо](https://inteltone.ru/vue/theme-clock/)         |
+| 21 | [Эффект кнопки](https://github.com/inteltone/Vue.js-3-projects/tree/master/21-button-ripple-effect)        | [Демо](https://inteltone.ru/vue/button-ripple-effect/)|
 
 
 
