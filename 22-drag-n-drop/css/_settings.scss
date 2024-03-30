@@ -1,0 +1,42 @@
+html,body{
+	overflow-x: hidden;
+	block-size: 100%;
+}
+body{		
+	position: relative;	
+	display: grid;
+	place-items: center;
+	color: var(--clr-text);
+	background-color: var(--clr-blue-500);
+	font-family: var(--ff-prim); 
+	font-size: var(--fz-0);
+	font-weight: var(--fw-n);
+	line-height: var(--lh-n);		
+}
+#app{
+	--s: 150px;
+	display: flex;
+	gap: 0 20px;
+}
+#draggable{
+	inline-size: 100%;
+	block-size: 100%;
+	background-image: url('../img/pic.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	cursor: grab;
+}
+.dropzone{
+	inline-size: var(--s);
+	block-size: var(--s);
+	background-color: var(--clr-white);
+	border: 3px solid var(--clr-black);		
+}
+.dragging {
+	opacity: 0.5;
+ }
+ .dropzone.dragover {
+	background-color: var(--clr-black);
+	border: 3px dashed var(--clr-white);
+ }
