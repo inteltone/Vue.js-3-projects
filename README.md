@@ -24,6 +24,7 @@
 | 20 | [Часы](https://github.com/inteltone/Vue.js-3-projects/tree/master/20-theme-clock)                          | [Демо](https://inteltone.ru/vue/theme-clock/)         |
 | 21 | [Эффект кнопки](https://github.com/inteltone/Vue.js-3-projects/tree/master/21-button-ripple-effect)        | [Демо](https://inteltone.ru/vue/button-ripple-effect/)|
 | 22 | [Перетаскивание](https://github.com/inteltone/Vue.js-3-projects/tree/master/22-drag-n-drop)                | [Демо](https://inteltone.ru/vue/drag-n-drop/)         |
+| 23 | [Рисовалка](https://github.com/inteltone/Vue.js-3-projects/tree/master/23-drawing-app)                     | [Демо](https://inteltone.ru/vue/drawing-app/)         |
 
 
 
