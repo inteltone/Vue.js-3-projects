@@ -1,0 +1,56 @@
+html{
+	overflow-x: hidden;
+	block-size: 100%;
+}
+body{		
+	--p: 10px;
+	position: relative;	
+	display: grid;
+	place-items: center;
+	block-size: calc(100% - var(--p) * 2);
+	padding: var(--p);
+	color: var(--clr-text);
+	background-color: var(--clr-black);
+	font-family: var(--ff-prim); 
+	font-size: var(--fz-0);
+	font-weight: var(--fw-n);
+	line-height: var(--lh-n);	
+}
+.app{
+	display: flex;
+	flex-direction: column;
+	inline-size: min(1000px, 100%);
+	block-size: 100%;	
+	border: 2px solid var(--clr-blue-500);
+	&__canvas{
+		flex-grow: 1;
+		background-color: var(--clr-white);
+	}
+	&__footer{
+		display: flex;
+		justify-content: space-between;
+		padding: 20px;
+		background-color: var(--clr-blue-500);
+	}
+	&__options{
+		display: flex;
+		gap: 0 10px;
+		block-size: 50px;
+	}
+	&__options > *, &__close {
+		display: grid;
+		place-items: center;
+		aspect-ratio: 1 / 1;
+		block-size: 100%;
+		background-color: var(--clr-white);
+		font-size: 28px;
+		border: 1px solid var(--clr-black);
+	}	
+}
+.modal{
+	font-size: 21px;
+}
+
+dialog::backdrop {
+	background-color: rgba(0, 0, 0, 0.5);
+ }

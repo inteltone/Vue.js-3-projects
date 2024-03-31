@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Рисовалка</title>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<div id="app" class="app" v-cloak>			
+		<canvas class="app__canvas"
+			@mousedown="handleMouseDown"
+			@mouseup="handleMouseUp"
+			@mousemove="handleMouseMove"
+		></canvas>
+		<footer class="app__footer">
+			<div class="app__options">
+				<button class="app__minus" @click="decreaseSize" title="Уменьшить">–</button>
+				<span class="app__size" title="Размер кисти">{{size}}</span>
+				<button class="app__plus" @click="increaseSize" title="Увеличить">+</button>
+				<input type="color" v-model="color" title="Выбрать цвет">
+			</div>
+			<button class="app__close" @click="clearCanvas" title="Удалить">X</button>
+		</footer>
+	</div>
+	<dialog class="modal">
+		<div class="modal__inner">
+			<p>Изменили размер экрана?</p>
+			<p>Перезагрузите страницу</p>
+		</div>
+	</dialog>
+	<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>
