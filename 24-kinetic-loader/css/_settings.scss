@@ -1,0 +1,72 @@
+html,body{
+	overflow-x: hidden;
+	block-size: 100%;
+}
+body{		
+	--p: 10px;
+	position: relative;	
+	display: grid;
+	place-items: center;
+	padding: var(--p);
+	color: var(--clr-text);
+	background-color: var(--clr-blue-900);
+	font-family: var(--ff-prim); 
+	font-size: var(--fz-0);
+	font-weight: var(--fw-n);
+	line-height: var(--lh-n);	
+}
+.app{
+	--duration: 2s;
+	position: relative;
+	aspect-ratio: 1;
+	inline-size: 100px;
+	&__box{
+		position: absolute;
+		inset: 0;
+		background-color: var(--clr-white);
+		clip-path: polygon(0% 0%, 100% 0%, 50% 50%);
+		
+	}
+}
+.box1{
+	clip-path: polygon(0% 0%, 100% 0%, 50% 50%);
+	animation: box1 var(--duration) linear infinite;
+}
+.box2{
+	clip-path: polygon(100% 0%, 100% 100%, 50% 50%);
+	animation: box2 var(--duration) linear infinite;
+}
+@keyframes box1 {
+	0%{
+		transform: rotate(0deg);
+	}	
+	25%{
+		transform: rotate(0deg);
+	}	
+	50%{
+		transform: rotate(180deg);
+	}	
+	75%{
+		transform: rotate(180deg);
+	}	
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@keyframes box2 {
+	0%{
+		transform: rotate(0deg);
+	}	
+	25%{
+		transform: rotate(180deg);
+	}	
+	50%{
+		transform: rotate(180deg);
+	}	
+	75%{
+		transform: rotate(360deg);
+	}	
+	100%{
+		transform: rotate(360deg);
+	}
+}
