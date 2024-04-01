@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Двойной слайдер</title>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<div id="app" class="slider">				
+		<div 
+			class="slider__slides" 
+			:style="`transform: translateY(${-total}px)`">
+			<div v-for="slide in slides" :key="slide.title" class="slider__slide">
+				<img :src="`./img/${slide.img}.avif`" :alt="slide.title">
+			</div>			
+		</div>
+		<div 
+		class="slider__desc"
+			:style="`transform: translateY(${total - step*(slides.length-1)}px)`"
+		>
+			<div 
+				v-for="slide in slides.slice().reverse()" 
+				:key="slide.title" 
+				class="slider__desc-content"
+				:style="`background-color: ${slide.color}`"
+			>
+				<h2 class="slider__desc-title">{{slide.title}}</h2>
+				<p class="slider__desc-text">{{slide.text}}</p>	
+			</div>			
+		</div>
+		<div class="slider__btns">
+			<button 
+				@click="calcTotalNext"
+				class="slider__btn up">
+				<span>&#10132;</span>
+			</button>
+			<button 
+				class="slider__btn down"
+				@click="calcTotalPrev"
+			>
+				<span>&#10132;</span>
+			</button>
+		</div>
+	</div>	
+	<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>
