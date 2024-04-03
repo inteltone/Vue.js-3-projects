@@ -27,6 +27,7 @@
 | 23 | [Рисовалка](https://github.com/inteltone/Vue.js-3-projects/tree/master/23-drawing-app)                     | [Демо](https://inteltone.ru/vue/drawing-app/)         |
 | 24 | [Загрузчик](https://github.com/inteltone/Vue.js-3-projects/tree/master/24-kinetic-loader)                  | [Демо](https://inteltone.ru/vue/kinetic-loader/)      |
 | 25 | [Двойной слайдер](https://github.com/inteltone/Vue.js-3-projects/tree/master/25-double-slider)             | [Демо](https://inteltone.ru/vue/double-slider/)       |
+| 26 | [Эффект текста](https://github.com/inteltone/Vue.js-3-projects/tree/master/26-auto-text-effect)            | [Демо](https://inteltone.ru/vue/auto-text-effect/)    |
 
 
 
