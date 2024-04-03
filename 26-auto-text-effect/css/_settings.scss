@@ -1,0 +1,45 @@
+html,body{
+	overflow-x: hidden;
+	block-size: 100%;
+}
+body{		
+	position: relative;		
+	color: var(--clr-text);
+	background-color: var(--clr-red-200);
+	font-family: var(--ff-prim); 
+	font-size: var(--fz-0);
+	font-weight: var(--fw-n);
+	line-height: var(--lh-n);	
+}
+.app{
+	position: absolute;
+	inset: 0;
+	display: grid;
+	place-items: center;
+	&__text{
+		font-size: var(--fz-l);
+		font-weight: var(--fw-b);
+		text-align: center;
+	}
+	&__counter{
+		position: absolute;
+		inset-inline-start: 50%;
+		inset-block-end: 20px;
+		transform: translateX(-50%);
+		display: flex;
+		align-items: center;
+		gap: 0 10px;
+		padding: 10px 20px;
+		background-color: var(--clr-red-300);
+	}
+	&__input{
+		inline-size: 75px;
+		padding-inline-start: 10px;
+		padding-block: 5px;
+		background-color: var(--clr-red-200);
+		border: none;
+		&:focus-visible{
+			outline: none;
+		}
+	}
+}

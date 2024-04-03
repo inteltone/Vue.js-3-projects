@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Эффект текста</title>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<div id="app" class="app" v-cloak>				
+		<p class="app__text">{{sub}}</p>
+		<div class="app__counter">
+			<label class="app__label" for="app__input">Скорость</label>
+			<input 
+				class="app__input" 
+				type="number" 
+				min="1" 
+				max="10" 
+				id="app__input" 
+				v-model="duration_inc"
+				@input="handleDuration"
+			>
+		</div>
+	</div>	
+	<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>
