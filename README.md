@@ -26,6 +26,7 @@
 | 22 | [Перетаскивание](https://github.com/inteltone/Vue.js-3-projects/tree/master/22-drag-n-drop)                | [Демо](https://inteltone.ru/vue/drag-n-drop/)         |
 | 23 | [Рисовалка](https://github.com/inteltone/Vue.js-3-projects/tree/master/23-drawing-app)                     | [Демо](https://inteltone.ru/vue/drawing-app/)         |
 | 24 | [Загрузчик](https://github.com/inteltone/Vue.js-3-projects/tree/master/24-kinetic-loader)                  | [Демо](https://inteltone.ru/vue/kinetic-loader/)      |
+| 25 | [Двойной слайдер](https://github.com/inteltone/Vue.js-3-projects/tree/master/25-double-slider)             | [Демо](https://inteltone.ru/vue/double-slider/)       |
 
 
 
