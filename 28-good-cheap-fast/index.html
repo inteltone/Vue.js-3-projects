@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Два из трех</title>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<h1>Как должен быть сделан ваш проект?</h1>
+	<div id="app" class="app">		
+		<div class="form-group">
+			<div class="input-wrap" :class="{active: is_0}">
+				<input type="checkbox" id="checkbox0" v-model="is_0">
+			</div>
+			<label for="checkbox0">Качественно</label>
+		</div>
+		<div class="form-group">
+			<div class="input-wrap" :class="{active: is_1}">
+				<input type="checkbox" id="checkbox1" v-model="is_1">
+			</div>
+			<label for="checkbox1">Дешево</label>
+		</div>
+		<div class="form-group">
+			<div class="input-wrap" :class="{active: is_2}">
+				<input type="checkbox" id="checkbox2" v-model="is_2">
+			</div>
+			<label for="checkbox2">Быстро</label>
+		</div>
+	</div>	
+	<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>
