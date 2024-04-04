@@ -28,6 +28,7 @@
 | 24 | [Загрузчик](https://github.com/inteltone/Vue.js-3-projects/tree/master/24-kinetic-loader)                  | [Демо](https://inteltone.ru/vue/kinetic-loader/)      |
 | 25 | [Двойной слайдер](https://github.com/inteltone/Vue.js-3-projects/tree/master/25-double-slider)             | [Демо](https://inteltone.ru/vue/double-slider/)       |
 | 26 | [Эффект текста](https://github.com/inteltone/Vue.js-3-projects/tree/master/26-auto-text-effect)            | [Демо](https://inteltone.ru/vue/auto-text-effect/)    |
+| 27 | [Генератор паролей](https://github.com/inteltone/Vue.js-3-projects/tree/master/27-password-generator)      | [Демо](https://inteltone.ru/vue/password-generator/)  |
 
 
 
