@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Эффект текста</title>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<div id="app" class="app" v-cloak>				
+		<h1>Генератор паролей</h1>
+		<div class="app__password-wrap">
+			<span class="app__password">{{ password }}</span>
+			<span 
+				role="button" 
+				class="app__icon" 
+				@click="copyClipboard"
+				title="Копировать пароль"
+			>&#10132;</span>
+		</div>
+		<div class="form-group">
+			<label for="">Длина пароля</label>
+			<input 
+				type="number" 
+				:min="password_min_length" 
+				:max="password_max_length" 
+				v-model="password_length"
+			>
+		</div>
+		<div class="form-group">
+			<label for="">Включить заглавные буквы</label>
+			<input type="checkbox" v-model="upper_check">
+		</div>
+		<div class="form-group">
+			<label for="">Включить строчные буквы</label>
+			<input type="checkbox"  v-model="lower_check">
+		</div>
+		<div class="form-group">
+			<label for="">Включить числа</label>
+			<input type="checkbox"  v-model="numbers_check">
+		</div>
+		<div class="form-group">
+			<label for="">Включить символы</label>
+			<input type="checkbox"  v-model="symbols_check">
+		</div>
+		<button class="app__btn" @click="generatePassword">Сгенерировать пароль</button>
+	</div>	
+	<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>

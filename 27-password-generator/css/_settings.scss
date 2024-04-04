@@ -1,0 +1,59 @@
+html,body{
+	overflow-x: hidden;
+	block-size: 100%;
+}
+body{		
+	position: relative;
+	display: grid;
+	place-items: center;
+	color: var(--clr-white);
+	background-color: var(--clr-blue-500);
+	font-family: var(--ff-prim); 
+	font-size: var(--fz-0);
+	font-weight: var(--fw-n);
+	line-height: var(--lh-n);	
+}
+h1{		
+	font-size: var(--fz-m);
+	text-align: center;
+}
+.app{
+	display: grid;
+	gap: 15px 0;
+	inline-size: 320px;	
+	padding: 20px;
+	background-color: var(--clr-blue-900);
+	&__password-wrap{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 0 10px;
+		padding: 10px;
+		background-color: var(--clr-black);
+	}	
+	&__icon{	
+		display: grid;
+		place-items: center;
+		aspect-ratio: 1;
+		block-size: 100%;	
+		background-color: var(--clr-green-500);
+		transform: rotate(-90deg);
+		cursor: pointer;
+	}
+	&__btn{
+		display: block;
+		inline-size: 100%;
+		padding: 10px;
+		background-color: var(--clr-green-500);
+		font-weight: var(--fw-sb);
+		text-align: center;
+	}
+}
+.form-group{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	input[type='number']{
+		inline-size: 75px;
+	}
+}
