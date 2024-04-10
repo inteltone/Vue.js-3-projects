@@ -30,6 +30,7 @@
 | 26 | [Эффект текста](https://github.com/inteltone/Vue.js-3-projects/tree/master/26-auto-text-effect)            | [Демо](https://inteltone.ru/vue/auto-text-effect/)    |
 | 27 | [Генератор паролей](https://github.com/inteltone/Vue.js-3-projects/tree/master/27-password-generator)      | [Демо](https://inteltone.ru/vue/password-generator/)  |
 | 28 | [Два из трех](https://github.com/inteltone/Vue.js-3-projects/tree/master/28-good-cheap-fast)               | [Демо](https://inteltone.ru/vue/good-cheap-fast/)     |
+| 28 | [Заметки](https://github.com/inteltone/Vue.js-3-projects/tree/master/29-notes-app)                         | [Демо](https://inteltone.ru/vue/notes-app/)           |
 
 
 
