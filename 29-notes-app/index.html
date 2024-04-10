@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Заметки</title>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<div id="app" class="app" v-cloak>	
+		<div class="app__btns">
+			<button class="app__btn add" @click="createNote">Создать</button>
+			<button v-show="notes.length > 0" class="app__btn delete-all" @click="deleteAllNotes">Удалить все</button>
+		</div>	
+		<div class="app__notes">
+			<div class="app__note" v-for="note,index in notes" :key="index">
+				<div class="app__note-header">
+					<button 
+						class="app__note-header-btn icon-edit" 
+						:title="note.isHidden ? 'Редактировать' : 'Заблокировать'"
+						@click="editNote(index)"
+					></button>
+					<button 
+						class="app__note-header-btn icon-bin" 
+						title="Удалить"
+						@click="deleteNote(index)"
+					></button>
+				</div>
+				<div class="app__note-body">
+					<p 
+						class="app__note-para"
+						:class="{hidden: !note.isHidden}"
+					>
+						{{note.text}}
+					</p>
+					<textarea 
+						class="app__textarea" 
+						:class="{hidden: note.isHidden}"
+						placeholder="Начните заметку ..." 
+						v-model="note.text"
+						@input="saveToLocalStorage"
+					>
+						{{note.text}}
+					</textarea>
+				</div>
+			</div>			
+		</div>		
+	</div>	
+	<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>
