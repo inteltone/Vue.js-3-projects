@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --min-content: 320px;
+  --max-content: 768px;
+  --pad: 30px;
+  --ff-prim: Montserrat, sans-serif;
+  --fz-xxs: 14px;
+  --fz-xs: 16px;
+  --fz-s: clamp(16px, 0.9565rem + 0.2174vi, 18px);
+  --fz-m: clamp(21px, 1.2473rem + 0.3261vi, 24px);
+  --fz-l: clamp(24px, 1.3261rem + 0.8696vi, 32px);
+  --fz-xl: clamp(32px, 1.6522rem + 1.7391vi, 48px);
+  --fz-xxl: clamp(48px, 1.6522rem + 1.7391vi, 64px);
+  --fz-xxxl: clamp(48px, 2.4783rem + 2.6087vi, 72px);
+  --fw-n: 400;
+  --fw-m: 500;
+  --fw-sb: 600;
+  --fw-b: 700;
+  --fw-bl: 900;
+  --lh-n: 1.5;
+  --lh-t: 1.1;
+  --clr-text: #000;
+  --clr-blue-50: #EBF5FB;
+  --clr-blue-100: #DFEFF9;
+  --clr-blue-200: #BEDEF3;
+  --clr-blue-300: #9ECEEE;
+  --clr-blue-400: #7DBDE8;
+  --clr-blue-500: #5DADE2;
+  --clr-blue-600: #4D96C6;
+  --clr-blue-700: #3C7EAA;
+  --clr-blue-800: #2C678E;
+  --clr-blue-900: #1B4F72;
+  --clr-red-100: #FADBD8;
+  --clr-red-200: #F5B7B1;
+  --clr-red-300: #F1948A;
+  --clr-red-400: #EC7063;
+  --clr-red-500: #E74C3C;
+  --clr-red-600: #CB4335;
+  --clr-red-700: #B03A2E;
+  --clr-red-800: #943126;
+  --clr-red-900: #78281F;
+  --clr-green-500: #27AE60;
+  --clr-purple-500: #8E44AD;
+  --clr-yellow-500: #F1C40F;
+  --clr-gray-100: #F2F3F4;
+  --clr-gray-300: #D7DBDD;
+  --clr-gray-500: #A6ACAF;
+  --clr-gray-700: #626567;
+  --clr-gray-900: #1b2631;
+  --clr-white: #fff;
+  --clr-black: hsl(0, 0%, 0%);
+  --clr-shadow: 0 0% 0%;
+  --tr: .3s ease-in-out;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.woff?fhmm85") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-edit:before {
+  content: "\e906";
+}
+
+.icon-bin:before {
+  content: "\e9ac";
+}
+
+html, body {
+  overflow-x: hidden;
+  block-size: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  position: relative;
+  color: var(--clr-text);
+  background-color: var(--clr-white);
+  font-family: var(--ff-prim);
+  font-size: var(--fz-0);
+  font-weight: var(--fw-n);
+  line-height: var(--lh-n);
+}
+
+.app__state {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+.app .final {
+  gap: 20px 0;
+}
+.app__btn {
+  justify-self: center;
+  padding: 5px 10px;
+  background-color: var(--clr-gray-100);
+  border: 1px solid var(--clr-text);
+  border-radius: 5px;
+  transition: background-color var(--tr);
+}
+.app__btn:hover {
+  background-color: var(--clr-gray-300);
+}
+.app__number-wrap {
+  overflow: hidden;
+}
+.app__number {
+  color: var(--clr-blue-500);
+  font-size: 64px;
+  font-weight: var(--fw-sb);
+  line-height: 1;
+  transform-origin: bottom center;
+  transform: rotate(180deg);
+}
+.app__number.anim {
+  -webkit-animation: number 1s linear;
+          animation: number 1s linear;
+}
+.app .text {
+  font-size: 32px;
+  font-weight: var(--fw-b);
+}
+.app__input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+@-webkit-keyframes number {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    transform: rotate(-10deg);
+    opacity: 1;
+  }
+  33% {
+    transform: rotate(10deg);
+  }
+  41% {
+    transform: rotate(0deg);
+  }
+  67% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-180deg);
+    opacity: 0;
+  }
+}
+@keyframes number {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    transform: rotate(-10deg);
+    opacity: 1;
+  }
+  33% {
+    transform: rotate(10deg);
+  }
+  41% {
+    transform: rotate(0deg);
+  }
+  67% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-180deg);
+    opacity: 0;
+  }
+}
+[v-cloak] {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=main.css.map */

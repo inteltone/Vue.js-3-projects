@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Заметки</title>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<div id="app" class="app" v-cloak>	
+		<div v-if="isReady" class="app__state">
+			<div class="app__number-wrap">
+				<div
+					class="app__number"
+					:class="{anim: isReady}"
+					:style="`animation-iteration-count: ${repeat};`"
+				>
+					{{counter}}
+				</div>
+			</div>
+			<div class="text">Готовы?</div>
+		</div>
+		<div v-else class="app__state final">
+			<div class="text">Вперед!</div>
+			<button 
+				class="app__btn"
+				@click="go"
+			>Повторить</button>
+			<div class="app__input-wrap">
+				<span>До старта</span>
+				<input 
+					type="number" 
+					min="2" 
+					max="10" 
+					class="app__input" 
+					v-model="number_init"
+					@input="setSecondsEnd"
+				>
+				<span>{{seconds_end}}</span>
+			</div>
+		</div>
+	</div>	
+	<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>
