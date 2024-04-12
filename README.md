@@ -32,6 +32,7 @@
 | 28 | [Два из трех](https://github.com/inteltone/Vue.js-3-projects/tree/master/28-good-cheap-fast)               | [Демо](https://inteltone.ru/vue/good-cheap-fast/)     |
 | 29 | [Заметки](https://github.com/inteltone/Vue.js-3-projects/tree/master/29-notes-app)                         | [Демо](https://inteltone.ru/vue/notes-app/)           |
 | 30 | [Обратный отсчет](https://github.com/inteltone/Vue.js-3-projects/tree/master/30-animated-countdown)        | [Демо](https://inteltone.ru/vue/animated-countdown/)  |
+| 31 | [Карусель](https://github.com/inteltone/Vue.js-3-projects/tree/master/31-image-carousel)                   | [Демо](https://inteltone.ru/vue/image-carousel/)      |
 
 
 
