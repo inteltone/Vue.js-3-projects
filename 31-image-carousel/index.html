@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Слайдер</title>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<div id="app" class="app" v-cloak>	
+		<div class="app__slider">
+			<div 
+				class="app__slider-track"
+				:style="`
+				transform: translateX(${move}px);
+				transition: transform ${speed}s ease-in-out;
+				`"
+			>
+				<div v-for="slide in slides" class="app__slider-slide">
+					<img :src="`./img/${slide.name}.avif`" :alt="slide.alt">
+				</div>
+				
+			</div>
+			<div class="app__slider-btns">
+				<button class="app__slider-btn icon-prev" @click="handlePrev"></button>
+				<button class="app__slider-btn icon-next" @click="handleNext"></button>
+			</div>
+		</div>
+		<div class="app__options">
+			<p class="app__option">Скорость перехода 
+				<input type="number" min="0.1" step="0.1" v-model="speed">
+			</p>
+			<p class="app__option">Время показа 
+				<input type="number" min="1" step="0.5" v-model="duration" @input="go">
+			</p>
+		</div>
+	</div>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.4.21/vue.global.prod.min.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>
