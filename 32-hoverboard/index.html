@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ховерборд</title>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<div id="app" class="app content" v-cloak>	
+		<div 
+			class="app__box" 
+			v-for="box,index in 500"
+			@mouseover="mouseover"
+		></div>
+	</div>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.4.21/vue.global.prod.min.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>
