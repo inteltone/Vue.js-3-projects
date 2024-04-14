@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --min-content: 320px;
+  --max-content: 768px;
+  --pad: 30px;
+  --ff-prim: Montserrat, sans-serif;
+  --fz-xxs: 14px;
+  --fz-xs: 16px;
+  --fz-s: clamp(16px, 0.9565rem + 0.2174vi, 18px);
+  --fz-m: clamp(21px, 1.2473rem + 0.3261vi, 24px);
+  --fz-l: clamp(24px, 1.3261rem + 0.8696vi, 32px);
+  --fz-xl: clamp(32px, 1.6522rem + 1.7391vi, 48px);
+  --fz-xxl: clamp(48px, 1.6522rem + 1.7391vi, 64px);
+  --fz-xxxl: clamp(48px, 2.4783rem + 2.6087vi, 72px);
+  --fw-n: 400;
+  --fw-m: 500;
+  --fw-sb: 600;
+  --fw-b: 700;
+  --fw-bl: 900;
+  --lh-n: 1.5;
+  --lh-t: 1.1;
+  --clr-text: #000;
+  --clr-blue-50: #EBF5FB;
+  --clr-blue-100: #DFEFF9;
+  --clr-blue-200: #BEDEF3;
+  --clr-blue-300: #9ECEEE;
+  --clr-blue-400: #7DBDE8;
+  --clr-blue-500: #5DADE2;
+  --clr-blue-600: #4D96C6;
+  --clr-blue-700: #3C7EAA;
+  --clr-blue-800: #2C678E;
+  --clr-blue-900: #1B4F72;
+  --clr-red-100: #FADBD8;
+  --clr-red-200: #F5B7B1;
+  --clr-red-300: #F1948A;
+  --clr-red-400: #EC7063;
+  --clr-red-500: #E74C3C;
+  --clr-red-600: #CB4335;
+  --clr-red-700: #B03A2E;
+  --clr-red-800: #943126;
+  --clr-red-900: #78281F;
+  --clr-green-500: #27AE60;
+  --clr-purple-50: #F5EEF8;
+  --clr-purple-100: #F4ECF7;
+  --clr-purple-200: #E8DAEF;
+  --clr-purple-300: #D2B4DE;
+  --clr-purple-400: #BB8FCE;
+  --clr-purple-500: #A569BD;
+  --clr-purple-600: #8E44AD;
+  --clr-purple-700: #7D3C98;
+  --clr-purple-800: #6C3483;
+  --clr-purple-900: #5B2C6F;
+  --clr-purple-950: #4A235A;
+  --clr-yellow-500: #F1C40F;
+  --clr-gray-50: #F4F4F4;
+  --clr-gray-100: #E8E8E8;
+  --clr-gray-200: #D1D1D1;
+  --clr-gray-300: #B9B9B9;
+  --clr-gray-400: #A2A2A2;
+  --clr-gray-500: #8B8B8B;
+  --clr-gray-600: #747474;
+  --clr-gray-700: #5D5D5D;
+  --clr-gray-800: #464646;
+  --clr-gray-900: #2E2E2E;
+  --clr-white: #fff;
+  --clr-black: hsl(0, 0%, 0%);
+  --clr-shadow: 0 0% 0%;
+  --tr: .3s ease-in-out;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.woff?iui5xf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\e900";
+}
+
+.icon-blog:before {
+  content: "\e908";
+}
+
+.icon-work:before {
+  content: "\e9ae";
+}
+
+.icon-about-us:before {
+  content: "\e9de";
+}
+
+html, body {
+  overflow-x: hidden;
+  block-size: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 10px [content-start] 340px [content-end] 10px 1fr;
+  grid-template-rows: 1fr -webkit-min-content 1fr;
+  grid-template-rows: 1fr min-content 1fr;
+  color: var(--clr-text);
+  background-color: var(--clr-purple-500);
+  font-family: var(--ff-prim);
+  font-size: var(--fz-0);
+  font-weight: var(--fw-n);
+  line-height: var(--lh-n);
+}
+
+body > .content {
+  grid-column: content;
+}
+
+.app {
+  --border-r-app: 15px;
+  --border-r-img: 12px;
+  grid-row: 2/span 1;
+  display: flex;
+  flex-direction: column;
+  block-size: 600px;
+  background-color: var(--clr-white);
+  border: 3px solid var(--clr-gray-200);
+  border-radius: var(--border-r-app);
+}
+.app__imgs {
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1;
+  border-radius: var(--border-r-img) var(--border-r-img) 0 0;
+}
+.app__img {
+  position: absolute;
+  inset: 0;
+}
+.app__img img {
+  block-size: 100%;
+  opacity: 0;
+  transition: opacity var(--tr);
+}
+.app__img img.active {
+  opacity: 1;
+}
+.app__tabs {
+  display: flex;
+  block-size: 70px;
+}
+.app__tab {
+  flex: 1 1 25%;
+  display: grid;
+  gap: 5px 0;
+  align-content: center;
+  color: var(--clr-gray-600);
+  text-align: center;
+  transition: color var(--tr);
+}
+.app__tab-text {
+  font-size: 13px;
+}
+.app__tab:hover, .app__tab.active {
+  color: var(--clr-gray-900);
+}
+
+[v-cloak] {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=main.css.map */
