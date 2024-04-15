@@ -35,6 +35,7 @@
 | 31 | [Карусель](https://github.com/inteltone/Vue.js-3-projects/tree/master/31-image-carousel)                   | [Демо](https://inteltone.ru/vue/image-carousel/)         |
 | 32 | [Ховерборд](https://github.com/inteltone/Vue.js-3-projects/tree/master/32-hoverboard)                      | [Демо](https://inteltone.ru/vue/hoverboard/)             |
 | 33 | [Таб навигация](https://github.com/inteltone/Vue.js-3-projects/tree/master/33-mobile-tab-navigation)       | [Демо](https://inteltone.ru/vue/mobile-tab-navigation/)  |
+| 34 | [Надежность пароля](https://github.com/inteltone/Vue.js-3-projects/tree/master/34-password-strength-background) | [Демо](https://inteltone.ru/vue/password-strength-background/)  |
 
 
 
