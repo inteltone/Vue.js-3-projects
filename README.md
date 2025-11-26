@@ -7,7 +7,7 @@
 | 03 | [Вращающаяся навигация](https://github.com/inteltone/Vue.js-3-projects/tree/master/03-rotating-navigation) | [Демо](https://inteltone.ru/vue/vrashhajushhajasja-navigacija/)    |
 | 04 | [Скрываемый поиск](https://github.com/inteltone/Vue.js-3-projects/tree/master/04-hidden-search-widget)     | [Демо](https://inteltone.ru/vue/skryvaemaja-stroka-poiska/)          |
 | 05 | [Загрузка с размытием](https://github.com/inteltone/Vue.js-3-projects/tree/master/05-blurry-loading)       | [Демо](https://inteltone.ru/vue/zagruzka-s-razmytiem/)         |
-| 06 | [Анимация по скроллу](https://github.com/inteltone/Vue.js-3-projects/tree/master/06-scroll-animation)      | [Демо]()       |
+| 06 | [Анимация по скроллу](https://github.com/inteltone/Vue.js-3-projects/tree/master/06-scroll-animation)      | [Демо](https://inteltone.ru/vue/animacija-pri-skrolle-gsap-vue/)       |
 | 07 | [Разделенная страница](https://github.com/inteltone/Vue.js-3-projects/tree/master/07-split-landing-page)   | [Демо]()             |
 | 08 | [Волна для формы](https://github.com/inteltone/Vue.js-3-projects/tree/master/08-form-wave)                 | [Демо]()              |
 | 09 | [Список дел](https://github.com/inteltone/Vue.js-3-projects/tree/master/09-todo-list)                      | [Демо]()              |
