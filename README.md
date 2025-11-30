@@ -8,10 +8,10 @@
 | 04 | [Скрываемый поиск](https://github.com/inteltone/Vue.js-3-projects/tree/master/04-hidden-search-widget)     | [Демо](https://inteltone.ru/vue/skryvaemaja-stroka-poiska/)          |
 | 05 | [Загрузка с размытием](https://github.com/inteltone/Vue.js-3-projects/tree/master/05-blurry-loading)       | [Демо](https://inteltone.ru/vue/zagruzka-s-razmytiem/)         |
 | 06 | [Анимация по скроллу](https://github.com/inteltone/Vue.js-3-projects/tree/master/06-scroll-animation)      | [Демо](https://inteltone.ru/vue/animacija-pri-skrolle-gsap-vue/)       |
-| 07 | [Разделенная страница](https://github.com/inteltone/Vue.js-3-projects/tree/master/07-split-landing-page)   | [Демо]()             |
-| 08 | [Волна для формы](https://github.com/inteltone/Vue.js-3-projects/tree/master/08-form-wave)                 | [Демо]()              |
-| 09 | [Список дел](https://github.com/inteltone/Vue.js-3-projects/tree/master/09-todo-list)                      | [Демо]()              |
-| 10 | [Случайная цитата](https://github.com/inteltone/Vue.js-3-projects/tree/master/10-quotes)                   | [Демо]()                 |
+| 07 | [Разделенная страница](https://github.com/inteltone/Vue.js-3-projects/tree/master/07-split-landing-page)   | [Демо](https://inteltone.ru/vue/razdelennyj-jekran-split-screen-vue/)             |
+| 08 | [Волна для формы](https://github.com/inteltone/Vue.js-3-projects/tree/master/08-form-wave)                 | [Демо](https://inteltone.ru/vue/volnovoj-jeffekt-dlja-teksta-vue/)              |
+| 09 | [Список дел](https://github.com/inteltone/Vue.js-3-projects/tree/master/09-todo-list)                      | [Демо](https://inteltone.ru/vue/planirovshhik-zadach-todo-list/)              |
+| 10 | [Случайная цитата](https://github.com/inteltone/Vue.js-3-projects/tree/master/10-quotes)                   | [Демо](https://inteltone.ru/vue/generator-sluchajnyh-citat-vue/)                 |
 | 11 | [Код клавиш](https://github.com/inteltone/Vue.js-3-projects/tree/master/11-event-keycodes)                 | [Демо]()         |
 | 12 | [FAQ](https://github.com/inteltone/Vue.js-3-projects/tree/master/12-faq)                                   | [Демо]()                    |
 | 13 | [Случайный выбор](https://github.com/inteltone/Vue.js-3-projects/tree/master/13-random-choice-picker)      | [Демо]()   |
