@@ -12,7 +12,7 @@
 | 08 | [Волна для формы](https://github.com/inteltone/Vue.js-3-projects/tree/master/08-form-wave)                 | [Демо](https://inteltone.ru/vue/volnovoj-jeffekt-dlja-teksta-vue/)              |
 | 09 | [Список дел](https://github.com/inteltone/Vue.js-3-projects/tree/master/09-todo-list)                      | [Демо](https://inteltone.ru/vue/planirovshhik-zadach-todo-list/)              |
 | 10 | [Случайная цитата](https://github.com/inteltone/Vue.js-3-projects/tree/master/10-quotes)                   | [Демо](https://inteltone.ru/vue/generator-sluchajnyh-citat-vue/)                 |
-| 11 | [Код клавиш](https://github.com/inteltone/Vue.js-3-projects/tree/master/11-event-keycodes)                 | [Демо]()         |
+| 11 | [Код клавиш](https://github.com/inteltone/Vue.js-3-projects/tree/master/11-event-keycodes)                 | [Демо](https://inteltone.ru/vue/generator-kodov-klavish/)         |
 | 12 | [FAQ](https://github.com/inteltone/Vue.js-3-projects/tree/master/12-faq)                                   | [Демо]()                    |
 | 13 | [Случайный выбор](https://github.com/inteltone/Vue.js-3-projects/tree/master/13-random-choice-picker)      | [Демо]()   |
 | 14 | [Анимированное меню](https://github.com/inteltone/Vue.js-3-projects/tree/master/14-animated-navigation)    | [Демо]()    |
