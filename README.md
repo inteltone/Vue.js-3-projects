@@ -2,25 +2,25 @@
 
 | №  | Проект                                                                                                     | Демо                                                     |
 | -- | ---------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| 01 | [Слайдер](https://github.com/inteltone/Vue.js-3-projects/tree/master/01-expanding-cards)                   | [Демо](https://inteltone.ru/vue/vue-slider/)        |
-| 02 | [Шаги](https://github.com/inteltone/Vue.js-3-projects/tree/master/02-progress-steps)                       | [Демо](https://inteltone.ru/vue/indikator-vypolnenija-stepper/)         |
-| 03 | [Вращающаяся навигация](https://github.com/inteltone/Vue.js-3-projects/tree/master/03-rotating-navigation) | [Демо](https://inteltone.ru/vue/vrashhajushhajasja-navigacija/)    |
-| 04 | [Скрываемый поиск](https://github.com/inteltone/Vue.js-3-projects/tree/master/04-hidden-search-widget)     | [Демо](https://inteltone.ru/vue/skryvaemaja-stroka-poiska/)          |
-| 05 | [Загрузка с размытием](https://github.com/inteltone/Vue.js-3-projects/tree/master/05-blurry-loading)       | [Демо](https://inteltone.ru/vue/zagruzka-s-razmytiem/)         |
-| 06 | [Анимация по скроллу](https://github.com/inteltone/Vue.js-3-projects/tree/master/06-scroll-animation)      | [Демо](https://inteltone.ru/vue/animacija-pri-skrolle-gsap-vue/)       |
-| 07 | [Разделенная страница](https://github.com/inteltone/Vue.js-3-projects/tree/master/07-split-landing-page)   | [Демо](https://inteltone.ru/vue/razdelennyj-jekran-split-screen-vue/)             |
-| 08 | [Волна для формы](https://github.com/inteltone/Vue.js-3-projects/tree/master/08-form-wave)                 | [Демо](https://inteltone.ru/vue/volnovoj-jeffekt-dlja-teksta-vue/)              |
-| 09 | [Список дел](https://github.com/inteltone/Vue.js-3-projects/tree/master/09-todo-list)                      | [Демо](https://inteltone.ru/vue/planirovshhik-zadach-todo-list/)              |
-| 10 | [Случайная цитата](https://github.com/inteltone/Vue.js-3-projects/tree/master/10-quotes)                   | [Демо](https://inteltone.ru/vue/generator-sluchajnyh-citat-vue/)                 |
-| 11 | [Код клавиш](https://github.com/inteltone/Vue.js-3-projects/tree/master/11-event-keycodes)                 | [Демо](https://inteltone.ru/vue/generator-kodov-klavish/)         |
-| 12 | [FAQ](https://github.com/inteltone/Vue.js-3-projects/tree/master/12-faq)                                   | [Демо]()                    |
-| 13 | [Случайный выбор](https://github.com/inteltone/Vue.js-3-projects/tree/master/13-random-choice-picker)      | [Демо]()   |
-| 14 | [Анимированное меню](https://github.com/inteltone/Vue.js-3-projects/tree/master/14-animated-navigation)    | [Демо]()    |
-| 15 | [Социальные счетчики](https://github.com/inteltone/Vue.js-3-projects/tree/master/15-counters)              | [Демо]()               |
-| 16 | [Выпей воды](https://github.com/inteltone/Vue.js-3-projects/tree/master/16-drink-water)                    | [Демо]()            |
-| 17 | [Поиск фильмов](https://github.com/inteltone/Vue.js-3-projects/tree/master/17-movie-app)                   | [Демо]()              |
-| 18 | [Трансформация](https://github.com/inteltone/Vue.js-3-projects/tree/master/18-perspective-playground)      | [Демо]()              |
-| 19 | [Слайдер фона](https://github.com/inteltone/Vue.js-3-projects/tree/master/19-background-slider)            | [Демо]()      |
+| 01 | [Слайдер](https://github.com/inteltone/Vue.js-3-projects/tree/master/01-expanding-cards)                   | [Слайдер на Vue](https://inteltone.ru/vue/vue-slider/)        |
+| 02 | [Шаги](https://github.com/inteltone/Vue.js-3-projects/tree/master/02-progress-steps)                       | [Индикатор выполнения](https://inteltone.ru/vue/indikator-vypolnenija-stepper/)         |
+| 03 | [Вращающаяся навигация](https://github.com/inteltone/Vue.js-3-projects/tree/master/03-rotating-navigation) | [Вращающаяся навигация](https://inteltone.ru/vue/vrashhajushhajasja-navigacija/)    |
+| 04 | [Скрываемый поиск](https://github.com/inteltone/Vue.js-3-projects/tree/master/04-hidden-search-widget)     | [Скрываемая строка поиска](https://inteltone.ru/vue/skryvaemaja-stroka-poiska/)          |
+| 05 | [Загрузка с размытием](https://github.com/inteltone/Vue.js-3-projects/tree/master/05-blurry-loading)       | [Загрузка с размытием](https://inteltone.ru/vue/zagruzka-s-razmytiem/)         |
+| 06 | [Анимация по скроллу](https://github.com/inteltone/Vue.js-3-projects/tree/master/06-scroll-animation)      | [Анимация при скролле с GSAP](https://inteltone.ru/vue/animacija-pri-skrolle-gsap-vue/)       |
+| 07 | [Разделенная страница](https://github.com/inteltone/Vue.js-3-projects/tree/master/07-split-landing-page)   | [Разделенный экран](https://inteltone.ru/vue/razdelennyj-jekran-split-screen-vue/)             |
+| 08 | [Волна для формы](https://github.com/inteltone/Vue.js-3-projects/tree/master/08-form-wave)                 | [Волновой эффект для текста](https://inteltone.ru/vue/volnovoj-jeffekt-dlja-teksta-vue/)              |
+| 09 | [Список дел](https://github.com/inteltone/Vue.js-3-projects/tree/master/09-todo-list)                      | [Планировщик задач](https://inteltone.ru/vue/planirovshhik-zadach-todo-list/)              |
+| 10 | [Случайная цитата](https://github.com/inteltone/Vue.js-3-projects/tree/master/10-quotes)                   | [Генератор случайных цитат](https://inteltone.ru/vue/generator-sluchajnyh-citat-vue/)                 |
+| 11 | [Код клавиш](https://github.com/inteltone/Vue.js-3-projects/tree/master/11-event-keycodes)                 | [Генератор кодов клавиш](https://inteltone.ru/vue/generator-kodov-klavish/)         |
+| 12 | [FAQ](https://github.com/inteltone/Vue.js-3-projects/tree/master/12-faq)                                   | [Аккордеон на Vue](https://inteltone.ru/vue/akkordeon-js-vue/)                    |
+| 13 | [Случайный выбор](https://github.com/inteltone/Vue.js-3-projects/tree/master/13-random-choice-picker)      | [Случайный выбор](https://inteltone.ru/vue/sluchajnyj-vybor-randomizer-vue/)   |
+| 14 | [Анимированное меню](https://github.com/inteltone/Vue.js-3-projects/tree/master/14-animated-navigation)    | [Анимированная навигация](https://inteltone.ru/vue/animirovannaja-navigacija-vue/)    |
+| 15 | [Социальные счетчики](https://github.com/inteltone/Vue.js-3-projects/tree/master/15-counters)              | [Анимированный счетчик](https://inteltone.ru/vue/animirovannyj-schetchik-vue/)               |
+| 16 | [Выпей воды](https://github.com/inteltone/Vue.js-3-projects/tree/master/16-drink-water)                    | [Выпей воды](https://inteltone.ru/vue/vypej-vody-vue/)            |
+| 17 | [Поиск фильмов](https://github.com/inteltone/Vue.js-3-projects/tree/master/17-movie-app)                   | [Поиск фильмов]()              |
+| 18 | [Трансформация](https://github.com/inteltone/Vue.js-3-projects/tree/master/18-perspective-playground)      | [Конструктор 3D-трансформаций CSS](https://inteltone.ru/vue/interaktivnyj-konstruktor-3d-transformacij-css/)              |
+| 19 | [Слайдер фона](https://github.com/inteltone/Vue.js-3-projects/tree/master/19-background-slider)            | [Слайдер изображений с эффектом «окна»](https://inteltone.ru/vue/slajder-izobrazhenij-s-jeffektom-okna-vue/)      |
 | 20 | [Часы](https://github.com/inteltone/Vue.js-3-projects/tree/master/20-theme-clock)                          | [Демо]()            |
 | 21 | [Эффект кнопки](https://github.com/inteltone/Vue.js-3-projects/tree/master/21-button-ripple-effect)        | [Демо]()   |
 | 22 | [Перетаскивание](https://github.com/inteltone/Vue.js-3-projects/tree/master/22-drag-n-drop)                | [Демо]()            |
