@@ -2,10 +2,10 @@
 
 | №  | Проект                                                                                                     | Демо                                                     |
 | -- | ---------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| 01 | [Слайдер](https://github.com/inteltone/Vue.js-3-projects/tree/master/01-expanding-cards)                   | [Слайдер на Vue](https://inteltone.ru/vue/vue-slider/)        |
-| 02 | [Шаги](https://github.com/inteltone/Vue.js-3-projects/tree/master/02-progress-steps)                       | [Индикатор выполнения](https://inteltone.ru/vue/indikator-vypolnenija-stepper/)         |
+| 01 | [Слайдер](https://github.com/inteltone/Vue.js-3-projects/tree/master/01-expanding-cards)                   | [Слайдер](https://inteltone.ru/vue/vue-slider/)        |
+| 02 | [Индикатор выполнения](https://github.com/inteltone/Vue.js-3-projects/tree/master/02-progress-steps)       | [Индикатор выполнения](https://inteltone.ru/vue/indikator-vypolnenija-stepper/)         |
 | 03 | [Вращающаяся навигация](https://github.com/inteltone/Vue.js-3-projects/tree/master/03-rotating-navigation) | [Вращающаяся навигация](https://inteltone.ru/vue/vrashhajushhajasja-navigacija/)    |
-| 04 | [Скрываемый поиск](https://github.com/inteltone/Vue.js-3-projects/tree/master/04-hidden-search-widget)     | [Скрываемая строка поиска](https://inteltone.ru/vue/skryvaemaja-stroka-poiska/)          |
+| 04 | [Скрываемый поиск](https://github.com/inteltone/Vue.js-3-projects/tree/master/04-hidden-search-widget)     | [Скрываемый поиск](https://inteltone.ru/vue/skryvaemaja-stroka-poiska/)          |
 | 05 | [Загрузка с размытием](https://github.com/inteltone/Vue.js-3-projects/tree/master/05-blurry-loading)       | [Загрузка с размытием](https://inteltone.ru/vue/zagruzka-s-razmytiem/)         |
 | 06 | [Анимация по скроллу](https://github.com/inteltone/Vue.js-3-projects/tree/master/06-scroll-animation)      | [Анимация при скролле с GSAP](https://inteltone.ru/vue/animacija-pri-skrolle-gsap-vue/)       |
 | 07 | [Разделенная страница](https://github.com/inteltone/Vue.js-3-projects/tree/master/07-split-landing-page)   | [Разделенный экран](https://inteltone.ru/vue/razdelennyj-jekran-split-screen-vue/)             |
