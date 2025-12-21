@@ -21,10 +21,10 @@
 | 17 | [Поиск фильмов](https://github.com/inteltone/Vue.js-3-projects/tree/master/17-movie-app)                   | [Поиск фильмов]()              |
 | 18 | [Трансформация](https://github.com/inteltone/Vue.js-3-projects/tree/master/18-perspective-playground)      | [Конструктор 3D-трансформаций CSS](https://inteltone.ru/vue/interaktivnyj-konstruktor-3d-transformacij-css/)              |
 | 19 | [Слайдер фона](https://github.com/inteltone/Vue.js-3-projects/tree/master/19-background-slider)            | [Слайдер изображений с эффектом «окна»](https://inteltone.ru/vue/slajder-izobrazhenij-s-jeffektom-okna-vue/)      |
-| 20 | [Часы](https://github.com/inteltone/Vue.js-3-projects/tree/master/20-theme-clock)                          | [Демо]()            |
-| 21 | [Эффект кнопки](https://github.com/inteltone/Vue.js-3-projects/tree/master/21-button-ripple-effect)        | [Демо]()   |
-| 22 | [Перетаскивание](https://github.com/inteltone/Vue.js-3-projects/tree/master/22-drag-n-drop)                | [Демо]()            |
-| 23 | [Рисовалка](https://github.com/inteltone/Vue.js-3-projects/tree/master/23-drawing-app)                     | [Демо]()            |
+| 20 | [Часы](https://github.com/inteltone/Vue.js-3-projects/tree/master/20-theme-clock)                          | [Демо](https://inteltone.ru/vue/analogovye-chasy-s-temnoj-temoj-vue/)            |
+| 21 | [Эффект кнопки](https://github.com/inteltone/Vue.js-3-projects/tree/master/21-button-ripple-effect)        | [Демо](https://inteltone.ru/vue/animacija-pulsacii-knopki-vue/)   |
+| 22 | [Перетаскивание](https://github.com/inteltone/Vue.js-3-projects/tree/master/22-drag-n-drop)                | [Демо](https://inteltone.ru/vue/interaktivnyj-komponent-drag-and-drop-vue/)            |
+| 23 | [Рисовалка](https://github.com/inteltone/Vue.js-3-projects/tree/master/23-drawing-app)                     | [Демо](https://inteltone.ru/vue/prostaja-risovalka-sozdaj-risovalku-sam-vue/)            |
 | 24 | [Загрузчик](https://github.com/inteltone/Vue.js-3-projects/tree/master/24-kinetic-loader)                  | [Демо]()         |
 | 25 | [Двойной слайдер](https://github.com/inteltone/Vue.js-3-projects/tree/master/25-double-slider)             | [Демо]()          |
 | 26 | [Эффект текста](https://github.com/inteltone/Vue.js-3-projects/tree/master/26-auto-text-effect)            | [Демо]()       |
